@@ -10,8 +10,9 @@ def pprint_window(rows):
 def transpose(rows):
     col_size = len(rows[0])
     transposed_characters = [[row[i] for row in rows] for i in range(col_size)]
-    cols = [''.join(col) for col in transposed_characters]
-    return cols
+    return transposed_characters
+    # cols = [''.join(col) for col in transposed_characters]
+    # return cols
 
 
 def find_seam_index(lines):
